@@ -1,0 +1,107 @@
+.buttons {
+    margin: auto;
+    text-align: center;
+    font: '../fonts/calibri';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.header_main_font_01 {
+    margin: auto;
+    text-align: center;
+    font: '../fonts/calibri';
+    font-size: 40px;
+    color: cyan;
+    font-weight: bold;
+}
+
+.hero_says {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(134, 200, 255);
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.fox_says {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(244, 184, 88);
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.slaves_says {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(107, 235, 68);
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.other_says1 {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(134, 255, 160);
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.other_says2 {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(198, 226, 36);
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.other_says3 {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(193, 47, 230);
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.actions {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(134, 255, 160);
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.main_font_01 {
+    margin: auto;
+    text-align: left;
+    font: '../fonts/calibri';
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.main_font_01_1 {
+    margin: auto;
+    text-align: left;
+    font: '../fonts/calibri';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+.highlight_main_font_01 {
+    text-align: center;
+    font-size: 20px;
+    color: #ff875e;
+    font: '../fonts/calibri';
+    font-weight: bold;
+}
+
+.link_font {
+    text-align: center;
+    font: '../fonts/calibri';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(54, 140, 252);
+}
