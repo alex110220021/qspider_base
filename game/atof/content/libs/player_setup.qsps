@@ -3,4 +3,23 @@ $mc["strData"]=""
 $mc["strData", "Name"]="Каэль"
 $mc["strData", "Body"]="Спортивное"
 $mc["strData", "Hair"]="Неухоженные"
+mc["intData"]=0
+mc["intData", "Stalka"]=0
+mc["intData", "Serebka"]=1
+mc["intData", "Token"]=0
+mc["intData", "Injures"]=0
+mc["intData", "Fun"]=0 ! -100 -> 100
+mc["intData", "Dirt"]=50 ! 0 -> 100
+mc["intData", "Social"]=50 ! 0 -> 100
+mc["intData", "Hunger"]=30 ! 0 -> 100
+mc["intData", "fatigue"]=70 ! -50 -> 100 (усталость)
+mc["intData", ""]
 --- player_setup ---------------------------------
+
+! 0 - Здоров
+! 1 - Простуда
+! 2 - Отравление
+! 3 - Лихорадка
+! 4 - Чума
+! 5 - Грипп
+! 6 - Мигрень
