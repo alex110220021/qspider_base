@@ -1,4 +1,4 @@
 # info_draw
 pl "hello?"
-p "Имя: <<$mc[""strData"", ""Name""]>>"
+p "Имя персонажа: <<$mc[""strData"", ""Name""]>>"
 --- info_draw ---------------------------------
