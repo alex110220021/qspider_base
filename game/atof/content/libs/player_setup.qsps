@@ -8,11 +8,11 @@ mc["intData", "Stalka"]=0
 mc["intData", "Serebka"]=1
 mc["intData", "Token"]=0
 mc["intData", "Injures"]=0
-mc["intData", "Fun"]=0 ! -100 -> 100
-mc["intData", "Dirt"]=50 ! 0 -> 100
-mc["intData", "Social"]=50 ! 0 -> 100
-mc["intData", "Hunger"]=30 ! 0 -> 100
-mc["intData", "fatigue"]=70 ! -50 -> 100 (усталость)
+mc["intData", "Fun"]=0
+mc["intData", "Dirt"]=50
+mc["intData", "Social"]=50
+mc["intData", "Hunger"]=30
+mc["intData", "fatigue"]=70
 --- player_setup ---------------------------------
 
 ! 0 - Здоров
