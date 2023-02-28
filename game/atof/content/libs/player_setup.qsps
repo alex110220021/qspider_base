@@ -13,7 +13,6 @@ mc["intData", "Dirt"]=50 ! 0 -> 100
 mc["intData", "Social"]=50 ! 0 -> 100
 mc["intData", "Hunger"]=30 ! 0 -> 100
 mc["intData", "fatigue"]=70 ! -50 -> 100 (усталость)
-mc["intData", ""]
 --- player_setup ---------------------------------
 
 ! 0 - Здоров
