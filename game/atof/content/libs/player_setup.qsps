@@ -1,0 +1,6 @@
+# player_setup
+$mc["strData"]=""
+$mc["strData", "Name"]="Каэль"
+$mc["strData", "Body"]="Спортивное"
+$mc["strData", "Hair"]="Неухоженные"
+--- player_setup ---------------------------------

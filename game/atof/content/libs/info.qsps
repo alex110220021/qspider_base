@@ -1,9 +1,4 @@
-$mc["strInfo"]=""
-$mc["strInfo", "Name"]="Каэль"
-mc["intInfo"]=0
-mc["intInfo", "Age"]=27
-mc["intInfo", "Stalka"]=0
-mc["intInfo", "Serebka"]=1
-mc["intInfo", "Bilet"]=0
-mc["intInfo", "SlaveHuman"]=0
-mc["intInfo", "SlaveBeast"]=0
+# info_draw
+pl "hello?"
+p "Имя: <<$mc[""strData"", ""Name""]>>"
+--- info_draw ---------------------------------
