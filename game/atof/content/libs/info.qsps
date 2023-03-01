@@ -1,3 +1,8 @@
 # info_draw
-pl "<div class='main_font_01' width=100%>Имя: <<$mc[""strData"", ""Name""]>>"
+pl "<center><div><img src=""content\pic\characters\main_character\kael_01.jpg"" width=""70%"" height=""70%""><div></center>"
+p "<div class='main_font_01' width=100%>Имя: <<$mc[""strData"", ""Name""]>></div>"
+p "<div class='main_font_01' width=100%>Пол: Мужской</div>"
+p "<div class='main_font_01' width=100%>Возраст: 27 лет</div>"
+pl "<div class='main_font_01' width=100%>Раса: Человек</div>"
+p "<div class='main_font_01' width=100%>Описание: Каэль имел хорошую жизнь до определённого момента. Теперь он вынужден путешествовать в поисках своей утерянной сестры, ему в этом деле помогает его рабыня Идрис.</div>"
 --- info_draw ---------------------------------
