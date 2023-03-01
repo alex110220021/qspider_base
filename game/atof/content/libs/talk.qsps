@@ -1,4 +1,5 @@
 # talk
+p "Work!!!!!!!!"
 $talking_with=$args[0]
 if talking_with="Идрис":
 
