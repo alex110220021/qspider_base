@@ -9,6 +9,7 @@ if talking_with="Идрис":
         *pl "<div class""hero_says"">(Каэль) <span class=""main_font_01"">- Привет Идрис!</span></div>"
         delact "<div class='buttons'>Поздороваться</div>"
         act "<div class='buttons'>Уйти</div>":
+           
             goto "dev_hub"
         end
     end
