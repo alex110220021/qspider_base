@@ -1,6 +1,6 @@
 # talk
-p "Work!!!!!!!!      Name: <<$args[0]>>"
-$talking_with="<<$args[0]>>"
+$talking_with=$args[0]
+p "Work!!!!!!!!      Name: <<$talking_with>>"
 if $talking_with="Идрис":
 
     *pl "<div class""fox_says"">(Идрис) <span class=""main_font_01"">- Здравствуйте господин, вы чего-то хотели?</span></div>"
