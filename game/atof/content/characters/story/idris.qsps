@@ -1,0 +1,12 @@
+# sc1
+$sc1["strData"]=""
+$sc1["strData", "Name"]="Идрис"
+sc1["intData"]=0
+sc1["intData", "Age"]=24
+sc1["intData", "Injures"]=0
+sc1["intData", "Fun"]=0
+sc1["intData", "Dirt"]=75
+sc1["intData", "Social"]=50
+sc1["intData", "Hunger"]=25
+sc1["intData", "Fatigue"]=0
+--- sc1 -----------------------
