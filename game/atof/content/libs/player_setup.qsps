@@ -1,8 +1,6 @@
 # player_setup
 $mc["strData"]=""
 $mc["strData", "Name"]="Каэль"
-$mc["strData", "Body"]="Спортивное"
-$mc["strData", "Hair"]="Неухоженные"
 mc["intData"]=0
 mc["intData", "Stalka"]=0
 mc["intData", "Serebka"]=1
@@ -15,6 +13,48 @@ mc["intData", "Hunger"]=30
 mc["intData", "fatigue"]=70
 --- player_setup ---------------------------------
 
+! -- Fun -- !
+! -100 - Very Very Bad (Suicide High Risk)
+! -75 - Very Bad (Suicide Risk)
+! -50 - Bad (Not happy and Suicide Low Risk)
+! -25 - Not too Bad (Just not happy)
+! 0 - Normal
+! 25 - Little Fun
+! 50 - Fun
+! 75 - Happy
+! 100 - Very Happy
+
+! -- Dirt -- !
+! 0 - Very Very Dirty (Nobody want to talk)
+! 25 - Very Dirty (Some close people can be talk) 
+! 50 - Normal (Any can be talk) 
+! 75 - Clean (All can be talk) 
+! 100 - Very Clean (Kings too can be talk)
+
+! -- Social -- !
+! 0 - Very Closed in self (Closed to talk)
+! 25 - Closed in self (Can be talk only with close peoples)
+! 50 - Little Closed in self (Can be talk with any people but too little)
+! 75 - Normal (Can be talk with all)
+! 100 - Too Talkative (Can't live without talks)
+
+! -- Hunger -- !
+! 0 - Very Hungry (Takes 5 health every action)
+! 25 - Hungry (Very Need to Eat)
+! 50 - Normal (No need for eat)
+! 75 - Fed (I don't want eat)
+! 100 - Overeated (I can throw up from eat)
+
+! -- Fatigue -- !
+! -50 - Very Very sleepy (Sleep Right Now)
+! -25 - Very Sleepy (Need Sleep)
+! 0 - Sleepy (Low to sleep)
+! 25 - Slightly Cheerful (No need to sleep)
+! 50 - Cheerful (Cheerful)
+! 75 - Very Cheerful (Can't sleep)
+! 100 - Very very Cheerful (I drinked 100 litres coffee)
+
+! -- Injures -- !
 ! 0 - Здоров
 ! 1 - Простуда
 ! 2 - Отравление

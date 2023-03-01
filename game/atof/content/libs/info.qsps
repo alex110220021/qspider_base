@@ -1,4 +1,3 @@
 # info_draw
-pl "hello?"
-p "Имя персонажа: <<$mc[""strData"", ""Name""]>>"
+pl "<div class='main_font_01' width=100%>Имя: <<$mc[""strData"", ""Name""]>>"
 --- info_draw ---------------------------------
