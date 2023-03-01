@@ -6,18 +6,21 @@ if $talking_with="Идрис":
     *pl "<div class=""fox_says"">(Идрис) <span class=""main_font_01"">- Здравствуйте господин, вы чего-то хотели?</span></div>"
     
     act "<div class='buttons'>Поздороваться</div>":
-        delact "<div class='buttons'>Уйти</div>"
+        delact "Поздороваться"
+        delact "Уйти"
         delact "<div class='buttons'>Поздороваться</div>"
+        delact "<div class='buttons'>Уйти</div>"
         *pl "<div class=""hero_says"">(Каэль) <span class=""main_font_01"">- Привет Идрис!</span></div>"
         act "<div class='buttons'>Уйти</div>":
-            delact "<div class='buttons'>Уйти</div>"
             goto "dev_hub"
         end
     end
 
     act "<div class='buttons'>Уйти</div>":
-        delact "<div class='buttons'>Поздороваться</div>"
+        delact "Уйти"
+        delact "Поздороваться"
         delact "<div class='buttons'>Уйти</div>"
+        delact "<div class='buttons'>Поздороваться</div>"
         *pl "<div class=""hero_says"">(Каэль) <span class=""main_font_01"">- Нет, уже ничего, пока.</span></div>"
         act "<div class='buttons'>></div>":
             goto "dev_hub"
