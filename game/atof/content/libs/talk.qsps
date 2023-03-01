@@ -1,5 +1,5 @@
 # talk
-p "Work!!!!!!!!"
+p "Work!!!!!!!!      <<$args[0]>>"
 $talking_with=$args[0]
 if talking_with="Идрис":
 
