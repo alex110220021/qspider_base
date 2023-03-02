@@ -1,3 +1,7 @@
+div:has(> [data-qsp="stats"]) {
+    height: 47%;
+}
+
 .buttons {
     margin: auto;
     text-align: center;
