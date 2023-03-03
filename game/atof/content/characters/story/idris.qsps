@@ -9,4 +9,16 @@ sc1["intData", "Dirt"]=75
 sc1["intData", "Social"]=50
 sc1["intData", "Hunger"]=25
 sc1["intData", "Fatigue"]=0
+
+$sc1["strHData"]=""
+sc1["intHData"]=0
+sc1["intHData", "VaginalVirgin"]=0
+sc1["intHData", "AnalVirgin"]=1
+sc1["intHData", "VaginalSexCount"]=3
+sc1["intHData", "AnalSexCount"]=0
+sc1["intHData", "OralSexCount"]=0
+sc1["intHData", "CunnilingusGiveCount"]=0
+sc1["intHData", "CunnilingusTakeCount"]=0
+sc1["intHData", "VaginalCreampiedCount"]=0
+sc1["intHData", "AnalCreampiedCount"]=0
 --- sc1 -----------------------

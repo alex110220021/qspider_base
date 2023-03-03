@@ -2,57 +2,59 @@
 $talking_with=$args[0]
 if $talking_with="Идрис":
 
-    *pl "<div class=""fox_says"">(Идрис) <span class=""main_font_01"">- Здравствуйте господин, вы чего-то хотели?</span></div>"
+    *pl "<div class='fox_says'>(Идрис) <span class='main_font_01'>- Здравствуйте господин, вы чего-то хотели?</span></div>"
     
-    act "<div class=""buttons"">Рассмотреть</div>":
+    act "<span class='buttons'>Рассмотреть</span>":
         clr
-        pl "<div><center><img src=""content/pic/characters/idris/idris01.png"" width=""60%"" height=""60%""></center></div>"
-        p "<div class=""main_font_01"">Имя: Идрис</div>"
-        p "<div class=""main_font_01"">Возраст: 25</div>"
-        pl "<div class=""main_font_01"">Раса: Зверолюд</div>"
-        p "<div class=""main_font_01"">Описание: Молодая на вид девушка с рыжими волосами, красивыми пушистыми ушками. Одета в лёгкое летнее платье.</div>"
+        pl "<div><center><img src='content/pic/characters/idris/idris01.png' width='60%' height='60%''></center></div>"
+        p "<div class='main_font_01'>Имя: Идрис</div>"
+        p "<div class='main_font_01'>Возраст: 25</div>"
+        pl "<div class='main_font_01'>Раса: Зверолюд</div>"
+        p "<div class='main_font_01'>Описание: Молодая на вид девушка с рыжими волосами, красивыми пушистыми ушками. Одета в лёгкое летнее платье.</div>"
     end
 
-    act "<div class=""buttons"">Поздороваться</div>":
-        delact "<div class=""buttons"">Поздороваться</div>"
-        *pl "<div class=""hero_says"">(Каэль) <span class=""main_font_01"">- Привет Идрис!</span></div>"
-        *pl "<div class=""actions"">Идрис улыбнулась глядя на вас</div>"
-        *pl "<div class=""fox_says"">(Идрис) <span class=""main_font_01"">- Так вы что-то хотели господин?</span></div>"
+    act "<span class='buttons'>Поздороваться</span>":
+        delact "<span class='buttons'>Поздороваться</span>"
+        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Привет Идрис!</span></div>"
+        *pl "<div class='actions'>Идрис улыбнулась глядя на вас</div>"
+        *pl "<div class='fox_says'>(Идрис) <span class='main_font_01'>- Так вы что-то хотели господин?</span></div>"
     end
 
-    act "<div class=""buttons"">Уйти</div>":
-        delact "<div class=""buttons"">Рассмотреть</div>"
-        delact "<div class=""buttons"">Уйти</div>"
-        delact "<div class=""buttons"">Поздороваться</div>"
-        *pl "<div class=""hero_says"">(Каэль) <span class=""main_font_01"">- Нет, уже ничего, пока.</span></div>"
-        *pl "<div class=""fox_says"">(Идрис) <span class=""main_font_01"">- Хорошо, удачи вам господин!</span></div>"
-        act "<div class=""buttons"">➤</div>":
+    act "<span class='buttons'>Уйти</span>":
+        delact "<span class='buttons'>Рассмотреть</span>"
+        delact "<span class='buttons'>Уйти</span>"
+        delact "<span class='buttons'>Поздороваться</span>"
+        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Нет, уже ничего, пока.</span></div>"
+        *pl "<div class='fox_says'>(Идрис) <span class='main_font_01'>- Хорошо, удачи вам господин!</span></div>"
+        act "<span class='buttons'>➤</span>":
+            clr
             goto "dev_hub"
         end
     end
 end
 
 if $talking_with="Крестьянин":
-    *pl "<div class=""other_says1"">(Крестьянин) <span class=""main_font_01"">- Здравствуй молодец, чего изволишь? Я могу рассказать страшный секрет этого мира, хочешь?</span></div>"
-    act "<div class=""buttons"">Узнать секрет</div>":
-        delact "<div class=""buttons"">Уйти</div>"
-        delact "<div class=""buttons"">Узнать секрет</div>"
-        *pl "<div class=""hero_says"">(Каэль) <span class=""main_font_01"">- А про какой секрет вы хотите рассказать?</span></div>"
-        *pl "<div class=""other_says1"">(Крестьянин) <span class=""main_font_01"">- Разработчик этой игры по имени Aimatt имеет кличку подобающую ему.</span></div>"
-        *pl "<div class=""other_says1"">(Крестьянин) <span class=""main_font_01"">- Его кличка - Рыбка</span></div>"
-        act "<div class=""buttons"">Уйти</div>":
-            delact "<div class=""buttons"">Уйти</div>"
-            *pl "<div class=""hero_says"">(Каэль) <span class=""main_font_01"">- Вау, прикольно, но мне уже пора. Прощай старик.</span></div>"
-            *pl "<div class=""other_says1"">(Крестьянин) <span class=""main_font_01"">- Удачного путешествия.</span></div>"
-            act "<div class=""buttons"">➤</div>":
+    *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Здравствуй молодец, чего изволишь? Я могу рассказать страшный секрет этого мира, хочешь?</span></div>"
+    act "<span class='buttons'>Узнать секрет</span>":
+        delact "<span class='buttons'>Уйти</span>"
+        delact "<span class='buttons'>Узнать секрет</span>"
+        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- А про какой секрет вы хотите рассказать?</span></div>"
+        *pl "<div class='actions'>Крестьянин улыбнулся</div>"
+        *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Разработчик этой игры по имени Aimatt имеет кличку подобающую ему.</span></div>"
+        *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Его кличка - Рыбка</span></div>"
+        act "<span class='buttons'>Уйти</span>":
+            delact "<span class='buttons'>Уйти</span>"
+            *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Вау, прикольно, но мне уже пора. Прощай старик.</span></div>"
+            *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Удачного путешествия.</span></div>"
+            act "<span class='buttons'>➤</span>":
                 goto "dev_hub"
             end
         end
     end
-    act "<div class=""buttons"">Уйти</div>":
-        delact "<div class=""buttons"">Уйти</div>"
-        *pl "<div class=""hero_says"">(Каэль) <span class=""main_font_01"">- Нет, уже ничего, пока.</span></div>"
-        act "<div class=""buttons"">➤</div>":
+    act "<span class='buttons'>Уйти</span>":
+        delact "<span class='buttons'>Уйти</span>"
+        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Нет, уже ничего, пока.</span></div>"
+        act "<span class='buttons'>➤</span>":
             goto "dev_hub"
         end
     end
