@@ -9,6 +9,7 @@ sc1["intData", "Dirt"]=75
 sc1["intData", "Social"]=50
 sc1["intData", "Hunger"]=25
 sc1["intData", "Fatigue"]=0
+sc1["intData", "Trust"]=100
 
 $sc1["strHData"]=""
 sc1["intHData"]=0
