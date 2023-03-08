@@ -1,31 +1,71 @@
 # talk
+inclib "content/characters/story/idris.qsps"
 $talking_with=$args[0]
 if $talking_with="Идрис":
 
-    *pl "<div class='fox_says'>(Идрис) <span class='main_font_01'>- Здравствуйте господин, вы чего-то хотели?</span></div>"
+    *pl "<span class='fox_says'>(Идрис) <span class='main_font_01'>- Здравствуйте господин, вы чего-то хотели?</span></span>"
     
     act "<span class='buttons'>Рассмотреть</span>":
         clr
-        pl "<div><center><img src='content/pic/characters/idris/idris01.png' width='60%' height='60%''></center></div>"
-        p "<div class='main_font_01'>Имя: Идрис</div>"
-        p "<div class='main_font_01'>Возраст: 25</div>"
-        pl "<div class='main_font_01'>Раса: Зверолюд</div>"
-        p "<div class='main_font_01'>Описание: Молодая на вид девушка с рыжими волосами, красивыми пушистыми ушками. Одета в лёгкое летнее платье.</div>"
+        pl "<div><center><img src='content/pic/characters/idris/idris01.png' width='60%' height='60%'></center></div>"
+        p "<span class='main_font_01'>Имя: <<$sc1['strData', 'Name']>></span>"
+        p "<span class='main_font_01'>Возраст: <<sc1['intData', 'Age']>></span>"
+        pl "<span class='main_font_01'>Раса: Зверолюд</span>"
+        p "<span class='main_font_01'>Описание: Молодая на вид девушка с рыжими волосами, красивыми пушистыми ушками. Одета в лёгкое летнее платье.</span>"
     end
 
     act "<span class='buttons'>Поздороваться</span>":
         delact "<span class='buttons'>Поздороваться</span>"
-        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Привет Идрис!</span></div>"
-        *pl "<div class='actions'>Идрис улыбнулась глядя на вас</div>"
-        *pl "<div class='fox_says'>(Идрис) <span class='main_font_01'>- Так вы что-то хотели господин?</span></div>"
+        *pl "<span class='hero_says'>(Каэль) <span class='main_font_01'>- Привет Идрис!</span></span>"
+        *pl "<span class='actions'>Идрис улыбнулась глядя на вас</span>"
+        *pl "<span class='fox_says'>(Идрис) <span class='main_font_01'>- Так вы что-то хотели господин?</span></span>"
+    end
+
+    act "<span class='buttons'>Вопросы</span>":
+        delact "<span class='buttons'>Рассмотреть</span>"
+        delact "<span class='buttons'>Поздороваться</span>"
+        delact "<span class='buttons'>Вопросы</span>"
+        delact "<span class='buttons'>Уйти</span>"
+        act "<span class='buttons'>Вопрос о состоянии</span>":
+            inclib "content/libs/stats.qsps"
+            gosub "stats"
+            clr
+            *pl "<span class='fox_says'>(Идрис) <span class='main_font_01'>- Хорошо.</span></span>"
+            *pl "<span class='actions'>Идрис рассказала вам о своём состоянии вплоть до мелочей. (Посмотрите окно дополнительного описания)</span>"
+            if sc1["intData", "Fun"] <= -75:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-100']>></span>"
+            elseif sc1["intData", "Fun"] <= -50:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-75']>></span>"
+            elseif sc1["intData", "Fun"] <= -25:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-50']>></span>"
+            elseif sc1["intData", "Fun"] < 0:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-25']>></span>"
+            elseif sc1["intData", "Fun"] = 0:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '0']>></span>"
+            elseif sc1["intData", "Fun"] <= 25:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '25']>></span>"
+            elseif sc1["intData", "Fun"] <= 50:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '50']>></span>"
+            elseif sc1["intData", "Fun"] <= 75:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '75']>></span>"
+            elseif sc1["intData", "Fun"] <= 100:
+                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '100']>></span>"
+            end
+        end
+        act "<span class='buttons'>Вопрос об опыте</span>":
+            
+        end
+        act "<span class='buttons'>Назад</span>":
+            goto $curloc, "Идрис"
+        end
     end
 
     act "<span class='buttons'>Уйти</span>":
         delact "<span class='buttons'>Рассмотреть</span>"
         delact "<span class='buttons'>Уйти</span>"
         delact "<span class='buttons'>Поздороваться</span>"
-        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Нет, уже ничего, пока.</span></div>"
-        *pl "<div class='fox_says'>(Идрис) <span class='main_font_01'>- Хорошо, удачи вам господин!</span></div>"
+        *pl "<span class='hero_says'>(Каэль) <span class='main_font_01'>- Нет, уже ничего, пока.</span></span>"
+        *pl "<span class='fox_says'>(Идрис) <span class='main_font_01'>- Хорошо, удачи вам господин!</span></span>"
         act "<span class='buttons'>➤</span>":
             clr
             goto "dev_hub"
@@ -34,18 +74,18 @@ if $talking_with="Идрис":
 end
 
 if $talking_with="Крестьянин":
-    *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Здравствуй молодец, чего изволишь? Я могу рассказать страшный секрет этого мира, хочешь?</span></div>"
+    *pl "<span class='other_says1'>(Крестьянин) <span class='main_font_01'>- Здравствуй молодец, чего изволишь? Я могу рассказать страшный секрет этого мира, хочешь?</span></span>"
     act "<span class='buttons'>Узнать секрет</span>":
         delact "<span class='buttons'>Уйти</span>"
         delact "<span class='buttons'>Узнать секрет</span>"
-        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- А про какой секрет вы хотите рассказать?</span></div>"
-        *pl "<div class='actions'>Крестьянин улыбнулся</div>"
-        *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Разработчик этой игры по имени Aimatt имеет кличку подобающую ему.</span></div>"
-        *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Его кличка - Рыбка</span></div>"
+        *pl "<span class='hero_says'>(Каэль) <span class='main_font_01'>- А про какой секрет вы хотите рассказать?</span></span>"
+        *pl "<span class='actions'>Крестьянин улыбнулся</span>"
+        *pl "<span class='other_says1'>(Крестьянин) <span class='main_font_01'>- Разработчик этой игры по имени Aimatt имеет кличку подобающую ему.</span></span>"
+        *pl "<span class='other_says1'>(Крестьянин) <span class='main_font_01'>- Его кличка - Рыбка</span></span>"
         act "<span class='buttons'>Уйти</span>":
             delact "<span class='buttons'>Уйти</span>"
-            *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Вау, прикольно, но мне уже пора. Прощай старик.</span></div>"
-            *pl "<div class='other_says1'>(Крестьянин) <span class='main_font_01'>- Удачного путешествия.</span></div>"
+            *pl "<span class='hero_says'>(Каэль) <span class='main_font_01'>- Вау, прикольно, но мне уже пора. Прощай старик.</span></span>"
+            *pl "<span class='other_says1'>(Крестьянин) <span class='main_font_01'>- Удачного путешествия.</span></span>"
             act "<span class='buttons'>➤</span>":
                 goto "dev_hub"
             end
@@ -53,7 +93,7 @@ if $talking_with="Крестьянин":
     end
     act "<span class='buttons'>Уйти</span>":
         delact "<span class='buttons'>Уйти</span>"
-        *pl "<div class='hero_says'>(Каэль) <span class='main_font_01'>- Нет, уже ничего, пока.</span></div>"
+        *pl "<span class='hero_says'>(Каэль) <span class='main_font_01'>- Нет, уже ничего, пока.</span></span>"
         act "<span class='buttons'>➤</span>":
             goto "dev_hub"
         end
