@@ -74,15 +74,15 @@ if $talking_with="Идрис":
                 pl "<span class='main_font_01'>Общение: <<$stat['Social', '100']>></span>"
             end
             if sc1["intData", "Hunger"] = 0:
-                pl "<span class='main_font_01'>Голод: <<$stat["Hunger', '0']>></span>"
+                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '0']>></span>"
             elseif sc1["intData", "Hunger"] <= 25:
-                pl "<span class='main_font_01'>Голод: <<$stat["Hunger', '25']>></span>"
+                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '25']>></span>"
             elseif sc1["intData", "Hunger"] <= 50:
-                pl "<span class='main_font_01'>Голод: <<$stat["Hunger', '50']>></span>"
+                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '50']>></span>"
             elseif sc1["intData", "Hunger"] <= 75:
-                pl "<span class='main_font_01'>Голод: <<$stat["Hunger', '75']>></span>"
+                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '75']>></span>"
             elseif sc1["intData", "Hunger"] <= 100:
-                pl "<span class='main_font_01'>Голод: <<$stat["Hunger', '100']>></span>"
+                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '100']>></span>"
             end
             if sc1["intData", "Fatigue"] = 0:
                 pl "<span class='main_font_01'>Бодрость: <<$stat['Fatigue', '0']>></span>"
