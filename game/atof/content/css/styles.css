@@ -98,6 +98,15 @@ div:has(> [data-qsp="stats"]) {
     color: rgb(255, 0, 0);
 }
 
+.sub_font_01 {
+    margin: auto;
+    text-align: left;
+    font: '../fonts/calibri';
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
 .highlight_main_font_01 {
     text-align: center;
     font-size: 20px;
