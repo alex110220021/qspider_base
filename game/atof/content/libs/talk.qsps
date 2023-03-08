@@ -8,10 +8,10 @@ if $talking_with="Идрис":
     act "<span class='buttons'>Рассмотреть</span>":
         clr
         pl "<div><center><img src='content/pic/characters/idris/idris01.png' width='60%' height='60%'></center></div>"
-        p "<span class='main_font_01'>Имя: <<$sc1['strData', 'Name']>></span>"
-        p "<span class='main_font_01'>Возраст: <<sc1['intData', 'Age']>></span>"
-        pl "<span class='main_font_01'>Раса: Зверолюд</span>"
-        p "<span class='main_font_01'>Описание: Молодая на вид девушка с рыжими волосами, красивыми пушистыми ушками. Одета в лёгкое летнее платье.</span>"
+        p "<span class='sub_font_01'>Имя: <<$sc1['strData', 'Name']>></span>"
+        p "<span class='sub_font_01'>Возраст: <<sc1['intData', 'Age']>></span>"
+        pl "<span class='sub_font_01'>Раса: Зверолюд</span>"
+        p "<span class='sub_font_01'>Описание: Молодая на вид девушка с рыжими волосами, красивыми пушистыми ушками. Одета в лёгкое летнее платье.</span>"
     end
 
     act "<span class='buttons'>Поздороваться</span>":
@@ -33,78 +33,78 @@ if $talking_with="Идрис":
             *pl "<span class='fox_says'>(Идрис) <span class='main_font_01'>- Хорошо.</span></span>"
             *pl "<span class='actions'>Идрис рассказала вам о своём состоянии вплоть до мелочей. (Посмотрите окно дополнительного описания)</span>"
             if sc1["intData", "Fun"] <= -75:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-100']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '-100']>></span>"
             elseif sc1["intData", "Fun"] <= -50:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-75']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '-75']>></span>"
             elseif sc1["intData", "Fun"] <= -25:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-50']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '-50']>></span>"
             elseif sc1["intData", "Fun"] < 0:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '-25']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '-25']>></span>"
             elseif sc1["intData", "Fun"] = 0:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '0']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '0']>></span>"
             elseif sc1["intData", "Fun"] <= 25:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '25']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '25']>></span>"
             elseif sc1["intData", "Fun"] <= 50:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '50']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '50']>></span>"
             elseif sc1["intData", "Fun"] <= 75:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '75']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '75']>></span>"
             elseif sc1["intData", "Fun"] <= 100:
-                pl "<span class='main_font_01'>Настроение: <<$stat['Fun', '100']>></span>"
+                pl "<span class='sub_font_01'>Настроение: <<$stat['Fun', '100']>></span>"
             end
             if sc1["intData", "Dirt"] = 0:
-                pl "<span class='main_font_01'>Чистота: <<$stat['Dirt', '0']>></span>"
+                pl "<span class='sub_font_01'>Чистота: <<$stat['Dirt', '0']>></span>"
             elseif sc1["intData", "Dirt"] <= 25:
-                pl "<span class='main_font_01'>Чистота: <<$stat['Dirt', '25']>></span>"
+                pl "<span class='sub_font_01'>Чистота: <<$stat['Dirt', '25']>></span>"
             elseif sc1["intData", "Dirt"] <= 50:
-                pl "<span class='main_font_01'>Чистота: <<$stat['Dirt', '50']>></span>"
+                pl "<span class='sub_font_01'>Чистота: <<$stat['Dirt', '50']>></span>"
             elseif sc1["intData", "Dirt"] <= 75:
-                pl "<span class='main_font_01'>Чистота: <<$stat['Dirt', '75']>></span>"
+                pl "<span class='sub_font_01'>Чистота: <<$stat['Dirt', '75']>></span>"
             elseif sc1["intData", "Dirt"] <= 100:
-                pl "<span class='main_font_01'>Чистота: <<$stat['Dirt', '100']>></span>"
+                pl "<span class='sub_font_01'>Чистота: <<$stat['Dirt', '100']>></span>"
             end
             if sc1["intData", "Social"] = 0:
-                pl "<span class='main_font_01'>Общение: <<$stat['Social', '0']>></span>"
+                pl "<span class='sub_font_01'>Общение: <<$stat['Social', '0']>></span>"
             elseif sc1["intData", "Social"] <= 25:
-                pl "<span class='main_font_01'>Общение: <<$stat['Social', '25']>></span>"
+                pl "<span class='sub_font_01'>Общение: <<$stat['Social', '25']>></span>"
             elseif sc1["intData", "Social"] <= 50:
-                pl "<span class='main_font_01'>Общение: <<$stat['Social', '50']>></span>"
+                pl "<span class='sub_font_01'>Общение: <<$stat['Social', '50']>></span>"
             elseif sc1["intData", "Social"] <= 75:
-                pl "<span class='main_font_01'>Общение: <<$stat['Social', '75']>></span>"
+                pl "<span class='sub_font_01'>Общение: <<$stat['Social', '75']>></span>"
             elseif sc1["intData", "Social"] <= 100:
-                pl "<span class='main_font_01'>Общение: <<$stat['Social', '100']>></span>"
+                pl "<span class='sub_font_01'>Общение: <<$stat['Social', '100']>></span>"
             end
             if sc1["intData", "Hunger"] = 0:
-                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '0']>></span>"
+                pl "<span class='sub_font_01'>Голод: <<$stat['Hunger', '0']>></span>"
             elseif sc1["intData", "Hunger"] <= 25:
-                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '25']>></span>"
+                pl "<span class='sub_font_01'>Голод: <<$stat['Hunger', '25']>></span>"
             elseif sc1["intData", "Hunger"] <= 50:
-                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '50']>></span>"
+                pl "<span class='sub_font_01'>Голод: <<$stat['Hunger', '50']>></span>"
             elseif sc1["intData", "Hunger"] <= 75:
-                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '75']>></span>"
+                pl "<span class='sub_font_01'>Голод: <<$stat['Hunger', '75']>></span>"
             elseif sc1["intData", "Hunger"] <= 100:
-                pl "<span class='main_font_01'>Голод: <<$stat['Hunger', '100']>></span>"
+                pl "<span class='sub_font_01'>Голод: <<$stat['Hunger', '100']>></span>"
             end
             if sc1["intData", "Fatigue"] = 0:
-                pl "<span class='main_font_01'>Бодрость: <<$stat['Fatigue', '0']>></span>"
+                pl "<span class='sub_font_01'>Бодрость: <<$stat['Fatigue', '0']>></span>"
             elseif sc1["intData", "Fatigue"] <= 25:
-                pl "<span class='main_font_01'>Бодрость: <<$stat['Fatigue', '25']>></span>"
+                pl "<span class='sub_font_01'>Бодрость: <<$stat['Fatigue', '25']>></span>"
             elseif sc1["intData", "Fatigue"] <= 50:
-                pl "<span class='main_font_01'>Бодрость: <<$stat['Fatigue', '50']>></span>"
+                pl "<span class='sub_font_01'>Бодрость: <<$stat['Fatigue', '50']>></span>"
             elseif sc1["intData", "Fatigue"] <= 75:
-                pl "<span class='main_font_01'>Бодрость: <<$stat['Fatigue', '75']>></span>"
+                pl "<span class='sub_font_01'>Бодрость: <<$stat['Fatigue', '75']>></span>"
             elseif sc1["intData", "Fatigue"] <= 100:
-                pl "<span class='main_font_01'>Бодрость: <<$stat['Fatigue', '100']>></span>"
+                pl "<span class='sub_font_01'>Бодрость: <<$stat['Fatigue', '100']>></span>"
             end
             if sc1["intData", "Trust"] = 0:
-                pl "<span class='main_font_01'>Доверие к вам: <<$stat['Trust', '0']>></span>"
+                pl "<span class='sub_font_01'>Доверие к вам: <<$stat['Trust', '0']>></span>"
             elseif sc1["intData", "Trust"] <= 25:
-                pl "<span class='main_font_01'>Доверие к вам: <<$stat['Trust', '25']>></span>"
+                pl "<span class='sub_font_01'>Доверие к вам: <<$stat['Trust', '25']>></span>"
             elseif sc1["intData", "Trust"] <= 50:
-                pl "<span class='main_font_01'>Доверие к вам: <<$stat['Trust', '50']>></span>"
+                pl "<span class='sub_font_01'>Доверие к вам: <<$stat['Trust', '50']>></span>"
             elseif sc1["intData", "Trust"] <= 75:
-                pl "<span class='main_font_01'>Доверие к вам: <<$stat['Trust', '75']>></span>"
+                pl "<span class='sub_font_01'>Доверие к вам: <<$stat['Trust', '75']>></span>"
             elseif sc1["intData", "Trust"] <= 100:
-                pl "<span class='main_font_01'>Доверие к вам: <<$stat['Trust', '100']>></span>"
+                pl "<span class='sub_font_01'>Доверие к вам: <<$stat['Trust', '100']>></span>"
             end
         end
         act "<span class='buttons'>Вопрос об опыте</span>":
